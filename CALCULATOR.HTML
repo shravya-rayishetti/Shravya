@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+    div{
+        border-radius: 15px;
+        width: 250px;
+    }
+    display{
+        border:1px solid black;
+        border-radius: 3px;
+        outline: none;
+        
+    }
+    .A{
+        margin-right: 17px;
+        height: 38px;
+        width: 38px; 
+        border-radius: 50%;  
+    }
+    .B{
+        width: 85px;
+        height: 35px;
+    }
+</style>
+<body style=" background-color: aquamarine;background-repeat: no-repeat;background-size: 100% 800px;padding-top:130px;">
+    <center>
+        <h1>Calculator</h1>
+        <div style= "fit-content; border: 7px solid black; box-shadow: 2px 2px 2px blue, -2px -2px 2px blue;" >
+            <form id="calsi" style="background-color:rgb(27, 168, 224);border-radius: 5px;">
+                <input id="display" style="font-weight: 100; background-color: greenyellow; text-align: right; width: 237px;  border: 3px solid white; border-radius: 10px; height: 20px;">
+                <br>
+                <br>
+                <input class="A" type="button" value="AC" style="background-color:darkturquoise" onmouseout="style.backgroundColor='darkturquoise'" onclick="style.backgroundColor='gold', calsi.display.value=''" >
+                <input class="A" type="button" value="C"  style="background-color:lightcoral" onmouseout="style.backgroundColor='lightcoral'" onclick="style.backgroundColor='gold', calsi.display.value=calsi.display.value.substr(0,calsi.display.value.length-1)">
+                <input class="A" type="button" value="%"  style="background-color:darkturquoise" onmouseout="style.backgroundColor='darkturquoise'" onclick="style.backgroundColor='gold', calsi.display.value+='%'">
+                <input class="A" type="button" value="+"  style="background-color:darkturquoise" onmouseout="style.backgroundColor='darkturquoise'" onclick="style.backgroundColor='gold', calsi.display.value+='+'">
+                <br>
+                <br>
+                <input class="A" type="button" value="1" style="background-color:orchid" onmouseout="style.backgroundColor='orchid'" onclick="style.backgroundColor='gold', calsi.display.value+='1'">
+                <input class="A" type="button" value="2" style="background-color:orchid" onmouseout="style.backgroundColor='orchid'" onclick="style.backgroundColor='gold', calsi.display.value+='2'">
+                <input class="A" type="button" value="3" style="background-color:orchid" onmouseout="style.backgroundColor='orchid'" onclick="style.backgroundColor='gold', calsi.display.value+='3'">
+                <input class="A" type="button" value="-" style="background-color:orchid" onmouseout="style.backgroundColor='orchid'" onclick="style.backgroundColor='gold', calsi.display.value+='-'">
+                <br>
+                <br>
+                <input class="A" type="button" value="4" style="background-color:deeppink"  onmouseout="style.backgroundColor='deeppink'" onclick="style.backgroundColor='gold',calsi.display.value+='4'">
+                <input class="A" type="button" value="5" style="background-color:deeppink"  onmouseout="style.backgroundColor='deeppink'" onclick="style.backgroundColor='gold',calsi.display.value+='5'">
+                <input class="A" type="button" value="6" style="background-color:deeppink"  onmouseout="style.backgroundColor='deeppink'" onclick="style.backgroundColor='gold',calsi.display.value+='6'">
+                <input class="A" type="button" value="*" style="background-color:deeppink"  onmouseout="style.backgroundColor='deeppink'" onclick="style.backgroundColor='gold',calsi.display.value+='*'">
+                <br>
+                <br>
+                <input class="A" type="button" value="7" style="background-color:deepskyblue" onmouseout="style.backgroundColor='deepskyblue'" onclick="style.backgroundColor='gold',calsi.display.value+='7'">
+                <input class="A" type="button" value="8" style="background-color:deepskyblue" onmouseout="style.backgroundColor='deepskyblue'" onclick="style.backgroundColor='gold',calsi.display.value+='8'">
+                <input class="A" type="button" value="9" style="background-color:deepskyblue" onmouseout="style.backgroundColor='deepskyblue'" onclick="style.backgroundColor='gold',calsi.display.value+='9'">
+                <input class="A" type="button" value="/" style="background-color:deepskyblue" onmouseout="style.backgroundColor='deepskyblue'" onclick="style.backgroundColor='gold',calsi.display.value+='/'">
+                    <br>
+                    <br>
+                <input class="A" type="button" value="." style="background-color:springgreen" onmouseout="style.backgroundColor='springgreen' "onclick="style.backgroundColor='gold',calsi.display.value+='.'">
+                <input class="A" type="button" value="0" style="background-color:springgreen" onmouseout="style.backgroundColor='springgreen' "onclick="style.backgroundColor='gold',calsi.display.value+='0'">
+                <input class="B" type="button" value="=" style="background-color:red" onmouseout="style.backgroundColor='red' "onclick="style.backgroundColor='blue',calsi.display.value=eval(calsi.display.value)">
+               <br>
+               <br>
+            </form>
+        </div>
+    </center>
+    </body>
+</body>
+</html>
